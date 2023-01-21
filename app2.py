@@ -39,9 +39,6 @@ def home():
 
 
 
-
-
-
 from googletrans import Translator
 translator = Translator()
 
@@ -60,7 +57,7 @@ def upload():
     prediction = my_model.predict(test_data)
     
  
-    breed = decode_predictions(prediction,top=3,class_list_path='C:/Users/fondr/Desktop/Data Science Projects/Applications/Dog_recognizer/ResNet-50/imagenet_class_index.json')
+    breed = decode_predictions(prediction,top=3,class_list_path='PATH/ResNet-50/imagenet_class_index.json')
     
 
     
