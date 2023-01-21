@@ -7,8 +7,7 @@
     <h1>Result</h1>
     <p>Uploaded Image:</p>
     <img src="{{ image_url }}" alt="Uploaded Image">
-    <p>The name of the breed is: <strong>{{ breed_name }}</strong></p>
-    <h2>Probabilities:</h2>
+    <p>The name of the breed is: <strong>{{ breed[0][0][1] }}</strong></p>
     <ul>
         {% for _, breed_name, prob in breed[0] %}
             <li>{{ breed_name }} ({{ prob*100 }}%)</li>
@@ -16,5 +15,4 @@
     </ul>
 </body>
 </html>
-
 
