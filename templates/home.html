@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dog Breed Identifier</title>
+</head>
+<body>
+    <h1>Welcome to Dog Breed Identifier</h1>
+    <p>Please upload an image of a dog to identify its breed</p>
+    <form action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
